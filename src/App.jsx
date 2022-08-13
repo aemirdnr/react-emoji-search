@@ -1,10 +1,13 @@
 import "./App.css";
 import Container from "./components/Container/Container";
+import { FilterProvider } from "./context/FilterContext";
 
 function App() {
   return (
     <div className="App">
-      <Container />
+      <FilterProvider>
+        <Container />
+      </FilterProvider>
     </div>
   );
 }

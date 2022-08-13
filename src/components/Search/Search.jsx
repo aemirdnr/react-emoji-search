@@ -1,9 +1,17 @@
+import { useFilter } from "../../context/FilterContext";
 import "./Search.sass";
 
 function Search() {
+  const { filter, setFilter } = useFilter();
+
   return (
     <>
-      <input className="emoji__input" placeholder="Emoji..." />
+      <input
+        value={filter}
+        onChange={(e) => setFilter(e.target.value)}
+        className="emoji__input"
+        placeholder="Emoji..."
+      />
     </>
   );
 }

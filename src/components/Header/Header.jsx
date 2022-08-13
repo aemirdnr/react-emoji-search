@@ -1,5 +1,3 @@
-import "./Header.sass";
-
 function Header() {
   return (
     <div className="d-flex justify-content-center align-items-center gap-3">
