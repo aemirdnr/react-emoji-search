@@ -1,0 +1,20 @@
+.emoji__box
+    display: flex
+    position: relative
+    align-items: center
+    gap: 12px
+    padding: 12px
+    border: solid 1px #bbb
+    .emoji__id
+        font-size: 18px
+        font-weight: 500
+    .emoji__copy
+        color: #000000
+        font-weight: 500
+        visibility: hidden
+        margin-left: auto
+    &:hover
+        background-color: #eee
+        cursor: pointer
+        .emoji__copy
+            visibility: visible
