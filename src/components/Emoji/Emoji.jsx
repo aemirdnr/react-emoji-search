@@ -5,7 +5,10 @@ function Emoji({ title, symbol, keywords }) {
   const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
 
   return (
-    <div className="emoji__box">
+    <div
+      className="emoji__box"
+      onClick={() => navigator.clipboard.writeText(symbol)}
+    >
       <img src={src} alt={keywords} width="36" height="36" />
       <span className="emoji__id"> {title}</span>
       <span className="emoji__copy"> Click to copy emoji</span>

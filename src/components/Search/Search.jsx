@@ -2,7 +2,7 @@ import { useFilter } from "../../context/FilterContext";
 import "./Search.sass";
 
 function Search() {
-  const { filter, setFilter } = useFilter();
+  const { filter, setFilter } = useFilter() || {};
 
   return (
     <>
